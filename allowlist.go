@@ -1,4 +1,4 @@
-package letsencrypt_allowlist
+package main
 
 import (
 	"context"
