@@ -1,6 +1,6 @@
 module github.com/skarajic/letsencrypt_allowlist
 
-go 1.23.5
+go 1.23.0
 
 require github.com/traefik/traefik/v3 v3.3.5
 
