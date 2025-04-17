@@ -15,7 +15,7 @@ type letsEncryptAllowLister struct {
 	ipAllowLister http.Handler
 }
 
-func New(ctx context.Context, next http.Handler, config dynamic.IPAllowList, name string) (*letsEncryptAllowLister, error) {
+func New(ctx context.Context, next http.Handler, config dynamic.IPAllowList, name string) (http.Handler, error) {
 	allowLister, err := ipallowlist.New(ctx, next, config, name)
 	if err != nil {
 		return nil, err
