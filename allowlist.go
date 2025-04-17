@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/traefik/traefik/v3/pkg/config/dynamic"
-	"github.com/traefik/traefik/v3/pkg/middlewares/ipallowlist"
+	"github.com/skarajic/letsencrypt_allowlist/traefik/config/dynamic"
+	"github.com/skarajic/letsencrypt_allowlist/traefik/middlewares/ipallowlist"
 )
 
 type letsEncryptAllowLister struct {

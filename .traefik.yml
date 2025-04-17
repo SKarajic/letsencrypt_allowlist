@@ -5,3 +5,7 @@ iconPath: .assets/icon.png
 import: github.com/skarajic/letsencrypt_allowlist
 
 summary: 'Extension of the allowlist middleware of Traefik, in order to allow LetsEncrypt certificates to still be created.'
+
+testData:
+  sourceRange:
+    - "127.0.0.1/32"
